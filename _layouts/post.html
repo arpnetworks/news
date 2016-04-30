@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/NewsArticle">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+    <p class="post-meta">
+
+      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%A, %B %-d, %Y" }}</time>
+       • <span itemprop="contentLocation" itemscope itemtype="http://schema.org/Place">{{ page.location }}</span></br>
+      <span>For immediate release</span>
+
+    </p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <div class="article-body">
+
+    {% include share.html %}
+
+    {{ content }}
+    </div>
+  </div>
+
+</article>
+
+<div class="footer-navigation">
+  « Back to <a href='{{ site.baseurl | prepend: site.url }}'>News and
+    Announcements</a>
+</div>
