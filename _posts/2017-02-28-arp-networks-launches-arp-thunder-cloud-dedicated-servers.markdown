@@ -18,7 +18,7 @@ servers for as low as **$40 per month**](https://arpnetworks.com/dedicated).
 *However*, we encourage reading below about the motivations and
 challenges that brought about the development and birth of this new
 offering.  These are not simply low priced dedicated servers, but a new
-way of offering dedicated that is a pleasure to manage and help you
+way of offering dedicated that is a pleasure to manage and will help you
 sleep easier at night.
 
 The Really Long
@@ -66,18 +66,19 @@ where this scenario becomes obsolete.
 But how?
 --------
 
-Ceph, if you haven't heard of it or are unfamiliar, is a distributed
-storage system designed for performance, resilience and scalability.
+[Ceph](http://ceph.com), if you haven't heard of it or are unfamiliar,
+is a distributed storage system designed for performance, resilience and
+scalability.
 
-We've built our own Ceph cluster and as we started to put it in beta and
-then later production, we had a light bulb moment and thought, "This
-changes the way we think about storage.  Nobody is going to rely on
-single disks or single RAID systems in the future.  Data will no longer
-live in a **static place**, but continuously move around (in Ceph) as
-conditions change."  Those conditions being, say, an HD failure, an
-entire node failure, or a positive event such as adding a new disk, a
-new node, or otherwise further expansion for more capacity or
-performance.
+We've built our own enterprise Ceph cluster and as we started to put it
+in beta and then later production, we had a light bulb moment and
+thought, "This changes the way we think about storage.  Nobody is going
+to rely on single disks or single RAID systems in the future.  Data will
+no longer live in a **static place**, but continuously move around (in
+Ceph) as conditions change."  Those conditions being, say, an HD
+failure, an entire node failure, or a positive event such as adding a
+new disk, a new node, or otherwise further expansion for more capacity
+or performance.
 
 Now, imagine your dedicated server being able to have a block device
 carved out of this cluster, instead of a single physical disk.  We
@@ -158,6 +159,7 @@ OK, so, million dollar question, how much does it cost?
 per month.  Simple as that.
 
 We are starting with 4 basic plans, but we have flexibility to offer
-many more.  If you don't see what you need, please [contact
+many more.  You can also add more RAM or disk as needed, no need to be
+stuck in set plans.  If you don't see what you need, please [contact
 us](https://arpnetworks.com/contact), tell us your needs and goals, and
 we'll give you a quote you can't refuse. :)
